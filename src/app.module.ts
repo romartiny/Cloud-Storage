@@ -7,6 +7,8 @@ import {TypeOrmModule} from "@nestjs/typeorm";
 import {UserEntity} from "./users/entities/user.entity";
 import {FileEntity} from "./files/entities/file.entity";
 import {ConfigModule} from "@nestjs/config";
+import { AuthModule } from './auth/auth.module';
+import { AuthclearService } from './authclear/authclear.service';
 
 @Module({
     imports: [
@@ -21,10 +23,10 @@ import {ConfigModule} from "@nestjs/config";
         entities: [UserEntity, FileEntity],
         synchronize: true,
     }),
-        UsersModule, FilesModule
+        UsersModule, FilesModule, AuthModule
     ],
     controllers: [AppController],
-    providers: [AppService],
+    providers: [AppService, AuthclearService],
 })
 export class AppModule {
 }
