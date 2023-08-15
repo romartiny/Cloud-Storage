@@ -9,14 +9,18 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@types/node": "20.5.0",
-    "@types/react": "18.2.20",
-    "@types/react-dom": "18.2.7",
-    "eslint": "8.47.0",
-    "eslint-config-next": "13.4.16",
-    "next": "13.4.16",
+    "@ant-design/icons": "^5.0.1",
+    "@types/node": "18.15.11",
+    "@types/react": "18.0.32",
+    "@types/react-dom": "18.0.11",
+    "antd": "^5.3.3",
+    "axios": "^1.4.0",
+    "next": "13.2.4",
+    "nookies": "^2.5.2",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "typescript": "5.1.6"
+    "react-selecto": "^1.22.1",
+    "sass": "^1.60.0",
+    "typescript": "5.0.3"
   }
 }
